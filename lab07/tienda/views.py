@@ -30,7 +30,6 @@ def productoPorCategory (request, categoria_id):
         }
     return render(request, 'index.html', context)
 
-
 def agregarCarrito(request,producto_id):
     objProducto = Producto.objects.get(id=producto_id)
     carritoProducto = Cart(request)
