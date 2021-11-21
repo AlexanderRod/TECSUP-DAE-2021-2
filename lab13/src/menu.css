@@ -1,0 +1,101 @@
+.wrap {
+  margin: 20px auto;
+}
+#nav {
+  width: 960px;
+  background: hsl(0,0%,5%);
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 5px;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;
+}
+#nav ul li, label[for=toggle] {
+  display: inline-block;
+  cursor: pointer;
+  
+  color: hsl(0,0%,75%);
+  padding: 13px 10px 13px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#nav ul li:last-child {
+  padding: 13px 25px 13px 25px;
+}
+#nav ul li:hover,
+label[for=toggle]:hover {
+  color: hsl(0,0%,90%);
+  text-shadow: 0 0 1px #fff; 
+}
+@media only screen 
+and (min-width : 1025px) {
+  input[type=checkbox]#toggle,
+  label[for=toggle] {
+    display: none;
+  }
+}
+@media only screen 
+and (max-width : 679px) {
+  #nav {
+    width: 80%;
+  }
+  input[type=checkbox]#toggle {
+    position: absolute;
+    z-index: -9999px;
+    top: -9999px;
+    left: -9999px;
+  }
+  i.icon-menu-1 {
+    margin: 0 10px 0 0;
+  }
+  label[for=toggle] {
+    width: 90%;
+  }
+  #menu {
+    display: none;
+  }
+  input[type=checkbox]#toggle:checked ~ #menu {
+    display: block;
+  }
+  input[type=checkbox]#toggle:checked ~ #menu li {
+    display: block;
+  }
+}
+@media only screen 
+and (min-width : 680px) 
+and (max-width : 702px) {
+  #nav {
+    width: 80%;
+    font-size: 11px;
+  }
+  input[type=checkbox]#toggle,
+  label[for=toggle] {
+    display: none;
+  }  
+}
+@media only screen 
+and (min-width : 703px) 
+and (max-width : 728px) {
+  #nav {
+    width: 80%;
+    font-size: 12px;
+  }
+  input[type=checkbox]#toggle,
+  label[for=toggle] {
+    display: none;
+  } 
+}
+@media only screen 
+and (min-width : 728px) 
+and (max-width : 1024px) {
+  #nav {
+    width: 80%;
+    font-size: 13px;
+  }
+  input[type=checkbox]#toggle,
+  label[for=toggle] {
+    display: none;
+  }  
+}
